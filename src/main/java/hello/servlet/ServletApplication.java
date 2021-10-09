@@ -12,4 +12,14 @@ public class ServletApplication {
         SpringApplication.run(ServletApplication.class, args);
     }
 
+    /**
+     * application.properties 와 동일
+     * spring.mvc.view.prefix=/WEB-INF/views/
+     * spring.mvc.view.suffix=.jsp
+     */
+//    @Bean
+//    ViewResolver internalResourceViewResolver() {
+//        return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
+//    }
+
 }

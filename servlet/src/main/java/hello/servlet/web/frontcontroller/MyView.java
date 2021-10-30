@@ -21,6 +21,7 @@ public class MyView {
         dispatcher.forward(request, response);
     }
 
+    // version 3, 4, 5 용
     public void render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         modelToRequestAttrobute(model, request);
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
